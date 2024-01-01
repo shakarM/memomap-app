@@ -1,0 +1,14 @@
+.logo {
+  height: 5.2rem;
+}
+
+.logoo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.logoo h5 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}

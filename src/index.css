@@ -1,0 +1,70 @@
+/* Taken from getting started guide at: https://leafletjs.com/examples/quick-start/ */
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
+
+/* These CSS variables are global, so they are available in all CSS modules */
+:root {
+  --color-brand--1: #ff8c00; /* Darkened orange color */
+  --color-brand--2: #00a86b; /* Darkened green color */
+
+  --color-dark--0: #1d2124; /* Darkened base color */
+  --color-dark--1: #272c30; /* Darkened background color */
+  --color-dark--2: #3a4044; /* Darkened secondary background color */
+  --color-light--1: #888; /* Lightened text color */
+  --color-light--2: #d0d0d0; /* Lightened secondary text color */
+  --color-light--3: #b8c3c5; /* Lightened tertiary text color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem; /* Adjusted padding for responsiveness */
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-light--3);
+  transition: all 0.2s;
+  margin-bottom: 1rem; /* Adjusted margin for responsiveness */
+}
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 2rem; /* Adjusted padding for responsiveness */
+  border-radius: 5px;
+  margin-top: 1rem;
+}
